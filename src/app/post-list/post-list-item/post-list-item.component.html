@@ -1,0 +1,19 @@
+<mat-card *ngIf="post" style="cursor: pointer;" (click)="navigate(post)">
+    <mat-card-header>
+		<mat-card-title><strong>Jméno:</strong> {{ post.name }}</mat-card-title>
+    </mat-card-header>
+
+	    <mat-card-header>
+        <mat-card-title><strong>Příjmení:</strong> {{ post.lastname }}</mat-card-title>
+    </mat-card-header>
+	
+		    <mat-card-header>
+        <mat-card-title><strong>Datum narození:</strong> {{ post.brthday }}</mat-card-title>
+    </mat-card-header>
+	
+    <mat-card-content>
+        <p><strong>Superschopnost:</strong>
+            {{ post.desc }}
+        </p>
+    </mat-card-content>
+</mat-card>

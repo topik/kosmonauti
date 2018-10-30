@@ -1,0 +1,37 @@
+<form novalidate [formGroup]="detailForm" (ngSubmit)="onSubmit(detailForm)">
+    <div fxLayout="column">
+        <mat-form-field>
+            <mat-label>Jméno</mat-label>
+            <input matInput type="text" formControlName="name">
+        </mat-form-field>
+		
+		      <mat-form-field>
+            <mat-label>Příjmení</mat-label>
+            <input matInput type="text" formControlName="lastname">
+        </mat-form-field>
+		
+			<mat-form-field>
+            <mat-label>Datum narození</mat-label>
+            <input matInput type="text" formControlName="brthday">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Superschopnost</mat-label>
+            <textarea matInput rows="4" formControlName="desc"></textarea>
+        </mat-form-field>
+		
+<!--
+		<mat-form-field>
+  <input matInput [matDatepicker]="myDatepicker">
+  <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+  <mat-datepicker #myDatepicker></mat-datepicker>
+</mat-form-field>
+-->
+
+        <div fxLayout="row-reverse">
+            <button mat-button type="submit" color="primary">Save</button>
+            <button mat-button (click)="onCancel()">Cancel</button>
+			<button mat-button (click)="onDelete()">Delete</button>
+        </div>
+    </div>
+</form>
