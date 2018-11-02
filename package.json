@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "preinstall": "npm install -g http-server",
-    "heroku-postbuild": "ng build --prod"
+    "postinstall": "ng build — aot=prod"
   },
   "private": true,
   "dependencies": {
