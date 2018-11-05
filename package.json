@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "scripts":{
       "ng":"ng",
-      "start":"http-server",
+      "start":"ng serve --port 8080",
       "build":"ng build",
       "test":"ng test",
       "lint":"ng lint",
       "e2e":"ng e2e",
-      "preinstall":"npm install -g http-server"
+
   },
   "private": true,
   "dependencies": {
