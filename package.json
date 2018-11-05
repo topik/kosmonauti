@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve --port 8080",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -57,4 +57,3 @@
     "npm": "6.4.1"
   }
 }
-
